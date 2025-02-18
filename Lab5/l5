@@ -1,0 +1,35 @@
+
+# Lab #5 Spark Dataframes and Spark SQL 
+> ( 22 marks) 
+
+**(We will be using Databricks community edition for this lab)**
+
+Export as an IPython notebook and submit to the dropbox
+
+> Repeat Steps #1 - #4 from Lab #3. This will create a spark dataframe. Name this dataframe `movies_with_decade.`
+
+1. Create a sql view using this “movies_with_decade” dataframe. Run a command to
+display all the views ( You will need to look up this command). ( 2 marks )
+2. Use the Spark Session “sql” function to determine which decade has the most number of movies. ( 4 marks )
+3. Use the Spark Session “sql” function to compute the number of movies each actor was in. The output should have two columns: actor, count. The output should be ordered by the count in descending order. ( 4 marks)
+
+> For exercises #4 and #5, you may use the Spark Session sql function, DataFrame transformation methods, or a combination of both. 
+
+> Exercises #4 use the file “movie-ratings.tsv”. 
+
+> For exercise #5 use the movies.json file from Lab #3
+
+4. Compute the highest-rated movie per year. The output should have only one movie per year, and it should contain three columns: 
+    - year
+    - movie title
+    - rating.
+- One solution to this is to use a correlated subquery. (6 marks)
+5. Determine which pair of actors worked together most. 
+    - Working together is defined as appearing in the same movie. The output should have three columns: 
+        - actor1, 
+        - actor2
+        - count. 
+    - The output should be sorted by the count in descending order. 
+    - The solution to this question requires doing self-join. ( 6 marks)
+
+> Due Wed Feb 19th
